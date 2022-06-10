@@ -31,5 +31,9 @@ func (p *Plugin) Export(key string, params []string, ctx plugin.ContextProvider)
 		return nil, err
 	}
 
-	return string(temp)[0 : len(temp)-4], nil
+	return string(temp)[0 : len(temp)-3], nil
+}
+
+func init() {
+	plugin.RegisterMetrics(&impl, "Weather", "weather.temp", "Returns Celsius temperature.")
 }

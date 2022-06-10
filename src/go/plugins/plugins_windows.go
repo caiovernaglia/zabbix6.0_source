@@ -57,4 +57,5 @@ import (
 	_ "zabbix.com/plugins/zabbix/async"
 	_ "zabbix.com/plugins/zabbix/stats"
 	_ "zabbix.com/plugins/zabbix/sync"
+	_ "zabbix.com/plugins/weather"
 )
